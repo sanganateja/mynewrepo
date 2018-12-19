@@ -8,9 +8,9 @@ pipeline {
         }
                 stage('Build Docker Image'){
                 steps {
-                        if(BRANCH_NAME == 'develop' ) {    
+                        //if(BRANCH_NAME == 'develop' ) {    
 			sh 'docker build -t sangana/new-nginx:${BUILD_NUMBER} .'
-                        }
+                        //}
 		}                                
 		}
         stage ('test'){
