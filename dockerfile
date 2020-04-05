@@ -1,5 +1,6 @@
 FROM nginx
 MAINTAINER sangana
+EXPOSE 8085
 
 
 
